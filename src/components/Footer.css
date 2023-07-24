@@ -1,0 +1,56 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 15px;
+    color: white;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 3%, rgba(0, 0, 0, 0) 100%);
+}
+
+footer .text {
+    width: 70%;
+    margin-bottom: -5px;
+}
+
+footer .text h3 {
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+footer .text h3:hover {
+    color: orange;
+}
+
+footer .text p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+footer .audio-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .audio-text marquee {
+    width: 75%;
+}
+
+footer .audio-text img {
+    width: 50px;
+    position: relative;
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

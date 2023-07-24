@@ -1,0 +1,51 @@
+main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.865);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #bcbdcd, #c5b0d3, #de9ec7, #f68ba7, #ff7e77, #ff756a, #ff6c5c, #ff634e, #ff5072, #f24a97, #d454b9, #a663d3);
+}
+.outer {
+  position: relative;
+}
+
+.container {
+  position: relative;
+  height: 90vh;
+  width: 47vh;
+  border-radius: 13px;
+  background-color: transparent;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  z-index: 1; /* Set a higher z-index value for the container */
+}
+
+/* Hide vertical scrollbar */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide horizontal scrollbar (optional) */
+.container::-webkit-scrollbar-horizontal {
+  display: none;
+}
+
+/* Hide scrollbar corner (optional) */
+.container::-webkit-scrollbar-corner {
+  display: none;
+}
+
+@media screen and (max-width : 480px) {
+  .container {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width : 300px) {
+  .container {
+    width: 50vh;
+  }
+}

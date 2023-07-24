@@ -1,0 +1,46 @@
+header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 10px;
+    width: 97%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 2; /* Set a lower z-index value for the header */
+}
+
+header .logo {
+    width: fit-content;
+    cursor: pointer;
+}
+
+header .logo img {
+    width: 70px;
+}
+
+header .profile {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px dashed transparent;
+    transition: 0.5s;
+}
+
+header .profile:hover {
+    border-color: blue;
+    border-style: solid;
+}
+
+header .profile img {
+    width: 33px;
+}
